@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: inkwell-api
+    name: blogback
     env: node
     region: oregon
     plan: free
@@ -10,8 +10,8 @@ services:
       - key: NODE_ENV
         value: production
       - key: MONGODB_URI
-        sync: false          # paste your Atlas URI in Render dashboard
+        sync: false
       - key: JWT_SECRET
         generateValue: true
       - key: FRONTEND_URL
-        value: https://your-app.vercel.app   # update this
+        value: https://blogfront-lake.vercel.app
